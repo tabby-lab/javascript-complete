@@ -59,3 +59,11 @@ console.log(main, secondary);
 
 restaurant.order(2,0);
 
+
+const nested = [2,4, [5,6]];
+// const [i, ,j] = nested;
+// console.log(i,j);
+
+const [i, ,[j,k] ] = nested;
+console.log(i,j,k);
+
