@@ -105,5 +105,18 @@ console.log(open,close)
 // console.log(p,q,r);
 
 
+//Spread operator 
+const arr = [7,8,9];
+//new elements the beginning
+
+const newArr = [1,2, ...arr];
+console.log(newArr);
+
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+
 
 
