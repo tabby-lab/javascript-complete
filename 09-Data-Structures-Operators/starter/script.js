@@ -14,6 +14,13 @@ const restaurant = {
   order:function(starterIndex, mainIndex){
     return[this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+
+orderDelivery: function({time,address
+}){
+  console.log(`Order recieved ${time}`);
+},
+
+
  openingHours: {
     thu: {
       open: 12,
@@ -29,6 +36,13 @@ const restaurant = {
     },
   },
 };
+
+restaurant.orderDelivery({
+  time:'22:30',
+  address: 'Del Sol'
+});
+
+
 
 const {name,openingHours,categories } = restaurant;
 
@@ -50,6 +64,10 @@ const obj= {a:23, b:7, c:14};
 
 ({a,b} = obj);
 console.log(a,b);
+
+//nested objects
+const {fri:{open,close}} = openingHours;
+console.log(open,close)
 
 
 
