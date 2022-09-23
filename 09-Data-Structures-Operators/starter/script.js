@@ -117,6 +117,29 @@ console.log(...newArr);
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
 
+//copy array
+const mainMenuCopy = [...restaurant.mainMenu];
 
+//join 2 arrays or more
+
+const mainJoin = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(mainJoin)
+
+
+//spread operator uses
+//1.build new arr or pass mulitiple values into a function.
+//spread operator unpack and arr and rest is to pack into an arr
+
+//spread because on right side of assignment operator
+const array = [1,2, ...[3,4]];
+//rest bc on left side of = sign
+const [m,n, ...others] = [2,3,4,5];
+console.log(m,n, others);
+//1 2 [3,4,5]
+
+const[pizza, ,risotto, ...otherFood]=[...restaurant.mainMenu, ...restaurant.starterMenu]
+console.log(pizza, risotto, otherFood);
+
+//SAME THING WITH OBJECTS. MAKES NEW OBJ 
 
 
